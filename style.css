@@ -1,0 +1,180 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  background-color: gray;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.titulo h1 {
+  font-family: 'Gajraj One';
+  font-size: 48px;
+  text-align: center;
+}
+
+#head {
+  width: 40px;
+  height: 40px;
+  background: rgba(0, 0, 0, .4);
+  border-radius: 50px;
+}
+
+#left-arm{
+  width: 20px;
+  height: 72px;
+  background: rgba(0, 0, 0, .4);
+  border-radius: 50px 50px 50px 50px;
+  margin-top: 4px;
+  transform: rotate(40deg);
+}
+
+#body {
+  width: 50px;
+  height: 80px;
+  background: rgba(0, 0, 0, .4);
+  border-radius: 20px;
+}
+
+#rigth-arm{
+  width: 20px;
+  height: 72px;
+  background: rgba(0, 0, 0, .4);
+  border-radius: 50px 50px 50px 50px;
+  margin-top: 4px;
+  transform: rotate(-40deg);
+}
+
+#left-leg {
+  width: 20px;
+  height: 75px;
+  background: rgba(0, 0, 0, .4);
+  border-radius: 50px 50px 50px 50px;
+}
+
+#rigth-leg {
+  width: 20px;
+  height: 75px;
+  background: rgba(0, 0, 0, .4);
+  border-radius: 50px 50px 50px 50px;
+}
+
+.parts {
+  display: grid;
+  justify-items: center;
+}
+
+.middle {
+  display: flex;
+  gap: 8px;
+}
+
+.bottom {
+  display: flex;
+  gap: 4px;
+}
+
+button {
+  border: none;
+  color: #000000;
+  font-family: 'Gajraj One';
+  font-size: 24px;
+}
+
+
+.buttons {
+  margin-top: 16px;
+  display: grid;
+  justify-items: center;
+}
+
+.restart {
+  background-color: green;
+  display: block;
+}
+
+.restart:hover {
+  background-color: red;
+}
+
+.message {
+  margin-top: 21px;
+  text-align: center;
+  display: block;
+  margin-top: 108px;
+  justify-content: center;
+  align-content: center;
+}
+
+.message-win, .message-lose {
+  font-family: 'Montserrat';
+  font-size: 22px;
+}
+
+.message-win {
+  color: green;
+}
+
+.message-lose {
+  color: red;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.rules {
+  margin-top: 12px;
+  font-family: 'Montserrat';
+  font-size: 22px;
+}
+
+.letras-erradas {
+  margin-top: 12px;
+  font-family: 'Montserrat';
+  font-size: 22px;
+}
+
+.letras-container {
+  margin-top: 8px;
+  color: red;
+}
+
+.palavra-certa { 
+  margin-top: 128px;
+  font-family: 'Montserrat';
+  font-size: 32px;
+  color: green;
+}
+
+.opacidade {
+  background: rgba(0, 0, 0, 1) !important;
+}
+
+.win, .lose {
+  display: none;
+}
+

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo da Forca</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gajraj+One&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <main>
+
+    <div class="container">
+
+      <div>
+        <div class="titulo">
+          <h1>Jogo da forca</h1>
+        </div>
+        <div class="parts">
+
+          <div class="top">
+            <div class="parte" id="head"></div>
+          </div>
+
+          <div class="middle">
+            <div class="parte" id="left-arm"></div>
+            <div class="parte" id="body"></div>
+            <div class="parte" id="rigth-arm"></div>
+          </div>
+
+          <div class="bottom">
+            <div class="parte" id="left-leg"></div>
+            <div class="parte" id="rigth-leg"></div>
+          </div>
+        </div>
+
+        <!-- <div class="buttons">
+          <div>
+            <button class="restart">RE-START</button>
+          </div>
+        </div> -->
+
+      </div>
+      <div class="informacoes">
+        <p class="rules">Digite no teclado as letras e tente adivinhar a palavra!!!</p>
+        <div class="letras-erradas">
+          <p class="desc-letras-erradas">Letras Erradas:</p>
+          <p class="letras-container"></p>
+          <p class="palavra-certa"></p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="message">
+      <div class="win">
+        <p class="message-win">Parabens voce ganhou!!!</p>
+        <div class="buttons">
+
+          <button class="restart">RE-START</button>
+
+        </div>
+      </div>
+
+      <div class="lose">
+        <p class="message-lose">Infelizmente, não foi dessa vez, você perdeu !!!</p>
+        <div class="buttons">
+
+          <button class="restart" id="btn" onclick="restart()">RE-START</button>
+
+        </div>
+      </div>
+    </div>
+
+
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
